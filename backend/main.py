@@ -5,15 +5,15 @@ from Coins import dogecoin,bitcoin,ether,tether,monero,dash
 app = FastAPI()
 
 # Allow all origins for development (update as needed in production)
-origins = ["*"]
+# origins = ["*"]
 
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=origins,
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
+# app.add_middleware(
+#     CORSMiddleware,
+#     allow_origins=origins,
+#     allow_credentials=True,
+#     allow_methods=["*"],
+#     allow_headers=["*"],
+# )
 
 # key = "0xce0babc8398144aa98d9210d595e3a9714910748" #valid ether
 # key = "DBKsPhXJ2A4cK8Z8F8nFbkVpeskYLoNNTk" #valid dogecoin
