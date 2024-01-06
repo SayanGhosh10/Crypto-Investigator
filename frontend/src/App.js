@@ -11,7 +11,7 @@ function App() {
 
   const handleSubmit = async () => {
     try {
-        const response = await axios.post('http://localhost:8000/process_input', {
+        const response = await axios.post('https://crypto-investigator-backend.onrender.com/process_input', {
             input_data: inputData,
         });
 
