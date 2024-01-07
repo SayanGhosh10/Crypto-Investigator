@@ -22,21 +22,22 @@ function App() {
 };
 
 
-
   return (
-    <div className="App container">
-      <h1>Crypto Investigator</h1>
-      <label className='form-label'>
-        Input Data:
-        <input className='form-control form-control-lg' type="text" value={inputData} onChange={handleInputChange} />
-      </label>
-      <button className='mx-3 btn btn-warning' onClick={handleSubmit}>Process Input</button>
-      {processedData && (
-        <div>
-          <h2>Result</h2>
-          <p>{processedData}</p>
-        </div>
-      )}
+    <div className="App container d-flex align-items-center justify-content-center my-5">
+      <div>
+        <h1>Crypto Investigator</h1>
+        <label className='form-label'>
+          Input Data:
+          <input className='form-control form-control-lg' type="text" value={inputData} onChange={handleInputChange} />
+        </label>
+        <button className='mx-3 btn btn-warning' onClick={handleSubmit}>Process Input</button>
+        {processedData && (
+          <div>
+            <h2>Result</h2>
+            <p>{processedData}</p>
+          </div>
+        )}
+      </div>
     </div>
   );
 }
